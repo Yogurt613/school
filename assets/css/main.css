@@ -1,0 +1,873 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+.tab {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+.wrap {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header a {
+    color: white;
+}
+
+.fontpage {
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fontpage a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    left: 20px;
+    top: 0px;
+    color: #000;
+}
+
+.fontpage h2 {
+    font-family: 標楷體;
+    position: absolute;
+    left: 120px;
+    top: 20px;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.fontpage h3 {
+    font-family: 標楷體;
+    position: absolute;
+    left: 120px;
+    top: 50px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.fontpage h4 {
+    font-family: 標楷體;
+    position: absolute;
+    left: 120px;
+    top: 70px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.navbar-nav {
+    display: flex;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.navbar-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-nav li a:hover {
+    color: white;
+    background-color: #baa6c9;
+}
+
+.dropdown-item {
+    padding: 10px;
+}
+
+.tab-head {
+    color: black;
+}
+
+.nav-tab {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    font-size: 20px;
+    background-color: #baa6c9;
+}
+
+.nav-tab li {
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+
+}
+
+.nav-tab li a {
+    color: black;
+}
+
+.main {
+    height: auto;
+    background-color: antiquewhite;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.main p {
+    font-size: 30px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: black;
+    margin: 10px;
+    text-align: center;
+}
+
+.detail p {
+    font-size: 15px;
+    font-family: 微軟正黑體;
+    color: black;
+    margin: 10px;
+    text-align: left;
+}
+
+.detail a {
+    text-decoration: underline;
+    color: black;
+}
+
+.detail a:hover {
+    text-decoration: none;
+}
+
+.detail table a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.index {
+    display: flex;
+    /* 使用Flex布局 */
+    justify-content: space-between;
+    /* 左右對齊 */
+}
+
+.footer {
+    background-color: #baa6c9;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer table {
+    width: 600px;
+    margin: 10px auto;
+}
+
+.footer table td {
+    vertical-align: top;
+    padding: 5px;
+}
+
+.footer table td p {
+    margin-top: 10px;
+}
+
+.ftitle {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.href {
+    height: 30px;
+    margin-top: 30px;
+    background-color: #baa6c9;
+
+}
+
+.href ol {
+    list-style: none;
+    /* 移除點號 */
+    margin: 0;
+    /* 移除外邊距 */
+    padding: 0;
+    /* 移除內邊距 */
+    line-height: 30px;
+    margin-left: 5%;
+}
+
+.href li {
+    display: inline-block;
+    /* 使用行內區塊元素 */
+}
+
+.href a {
+    color: #000;
+}
+
+.a1::after {
+    content: '/';
+    margin-left: 5px;
+}
+
+.a2::after {
+    content: '/';
+    margin-left: 5px;
+}
+
+.a3::after {
+    content: '/';
+    margin-left: 5px;
+}
+
+.title h2 {
+    font-size: 30px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding-top: 20px
+}
+
+.text h1 {
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    padding-top: 50px;
+    color: black;
+    font-size: 30px;
+    margin-top: 20px;
+    /* 將標題往下移動10像素 */
+    text-align: center;
+}
+
+.detail table {
+    text-align: left;
+    width: 100%;
+}
+
+.detail table th.year {
+    width: 20%;
+}
+
+.detail table th.thing,
+.detail table td.thing {
+    width: 80%;
+}
+
+.detail {
+    font-size: 18px;
+    font-family: 微軟正黑體;
+    word-wrap: break-word;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: left;
+}
+
+.detail ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.detail li {
+    margin-bottom: 30px;
+
+}
+
+.details h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.details h2 {
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.phohograph {
+    text-align: center;
+    padding: 10px;
+}
+
+.phohograph img {
+    width: 1000px;
+    height: auto;
+}
+
+.phohograph-2 img {
+    margin-left: 35px;
+    margin-top: 40px;
+    width: 650px;
+    /* 設定您想要的寬度值 */
+    height: 450px;
+}
+
+.phohograph-3 img {
+    width: 250px;
+    height: 250px;
+}
+
+.phohograph-4 img {
+    margin-left: 50px;
+    width: auto;
+    height: 375px;
+    width: 575px;
+    margin-top: 50px;
+}
+
+.phohograph-5 img {
+    width: 400px;
+    height: 350px;
+}
+
+.pho img {
+    margin-left: 35px;
+    margin-top: 40px;
+    width: 650px;
+    /* 設定您想要的寬度值 */
+    height: 450px;
+    /* 保持圖片的原始高寬比 */
+}
+
+.photo img {
+    margin-top: 20px;
+}
+
+.carousel-inner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.content-wrapper,
+.content-wrapper-2,
+.content-wrapper-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-wrapper-4 {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.content-container,
+.content-container-2,
+.content-container-3 {
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content-container-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.content-container-5 {
+    flex: 1;
+    margin: 10px;
+}
+
+.bdtext {
+    position: relative;
+    text-align: left;
+}
+
+.bdtext ul {
+    list-style-type: disc;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.bdtext li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.bdtext h1 {
+    width: 300px;
+    text-align: center;
+    margin-left: 40px;
+    line-height: 30px;
+    height: 30px;
+    background-color: #baa6c9;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.bdtext h2 {
+    font-size: 20px;
+    margin-left: 85px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.bdtext span {
+    font-size: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.bdtext-4 {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.bdtext-4 ul {
+    list-style-type: disc;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.bdtext-4 li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.bdtext-4 h1 {
+    text-align: center;
+    margin-left: 40px;
+    line-height: 30px;
+    height: 30px;
+    background-color: #baa6c9;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.material-icons {
+    font-size: 35px;
+    vertical-align: middle;
+    color: black;
+    margin-left: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+.container table {
+    border: 1px solid #000;
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #000;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.container1 table {
+    border: 1px solid #000;
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    border: 1px solid #000;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table-bordered {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+.table-bordered td,
+.tab th {
+    padding: 10px;
+    /* 保留原有的單元格內間距 */
+    border: #000 solid 1px;
+}
+
+.table-bordered th {
+    background-color: #baa6c9;
+    border: #000 solid 1px;
+}
+
+.left-table,
+.right-table {
+    flex: 1;
+    padding: 10px;
+    border-collapse: collapse;
+    width: 800px;
+}
+
+.left-table p,
+.right-table p {
+    font-size: 30px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: black;
+    margin: 10px;
+    text-align: left;
+    width: 800px;
+}
+
+.left-table th,
+.left-table td,
+.right-table th,
+.right-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 3px solid #DDD;
+}
+
+.left-table tr:hover,
+.right-table tr:hover {
+    background-color: #baa6c9;
+    color: white;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    /* 置中 */
+    border-radius: 10px;
+    /* 圓角 */
+    overflow: hidden;
+    text-align: left;
+    font-size: 20px;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border: none;
+    background-color: white;
+    /* 單元格底色為白色 */
+    width: 10%;
+}
+
+/* 表頭樣式 */
+.table th {
+    text-align: center;
+    background-color: #6c7ae0;
+    /* 表頭底色為 #6c7ae0 */
+    color: white;
+    /* 表頭文字顏色為白色 */
+    border: 1px solid #baa6c9;
+}
+
+/* 滑鼠懸停效果 */
+.table tr:hover td {
+    background-color: #baa6c9;
+    /* 滑鼠懸停時底色變為 #baa6c9 */
+    color: white;
+    /* 文字顏色為白色 */
+}
+
+.table tr {
+    display: table-row;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-table {
+    min-width: 900px;
+    background-color: transparent;
+}
+
+.custom-table th.date {
+    width: 20%;
+}
+
+.custom-table th.title {
+    width: 80%;
+}
+
+.custom-table thead tr,
+.custom-table thead th {
+    border: none;
+    background-color: transparent;
+    color: black;
+    text-align: left;
+    border-bottom: 1px solid #000;
+}
+
+.custom-table tbody td {
+    border: none;
+    background-color: transparent;
+    color: black;
+    border-bottom: 1px solid gray;
+}
+
+.row.header {
+    table-layout: fixed;
+}
+
+.cell {
+    line-height: 2;
+}
+
+/* 分頁容器 */
+.page {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#column1:hover {
+    color: black;
+}
+
+#column2:hover {
+    color: black;
+}
+
+#column3:hover {
+    color: black;
+}
+
+#year {
+    width: 3%;
+}
+
+#thing {
+    width: 97%;
+}
+
+#text {
+    text-align: center;
+}
+
+#title {
+    width: 85%;
+}
+
+.banner {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .wrap {
+        width: 100%;
+        /* 適應小螢幕 */
+    }
+
+    .fontpage {
+        width: 100%;
+        /* 適應小螢幕 */
+        flex-direction: column;
+        /* 垂直排列元素 */
+        align-items: center;
+    }
+
+    .fontpage a {
+        position: relative;
+        /* 清除定位 */
+        left: 0;
+        top: 0;
+    }
+
+    .fontpage h2,
+    .fontpage h4 {
+        position: static;
+        /* 清除定位 */
+    }
+
+    .main {
+        height: auto;
+        /* 自動高度 */
+    }
+
+    .footer table {
+        width: 100%;
+        /* 適應小螢幕 */
+    }
+
+    .footer table td {
+        display: block;
+        /* 垂直排列元素 */
+        text-align: center;
+        /* 文本置中 */
+    }
+
+    .pho img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .detail {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .phohograph img {
+        width: 100%;
+        height: auto;
+    }
+
+    .phohograph-4 img {
+        display: none;
+        /* 隱藏圖片 */
+    }
+
+    .bdtext h1 {
+        width: auto;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .bdtext span {
+        margin-left: 0;
+    }
+
+    .material-icons {
+        margin-left: 0;
+    }
+}
